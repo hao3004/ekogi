@@ -1,7 +1,7 @@
 INDEX:
         *điều hướng*
-        *style: nền đổi màu giống Kahoot.it :))*
-                *menu tự bật ra*
+        *style: nền đổi màu giống Kahoot.it :))* DONE
+                *menu tự bật ra* DONE
 
 
 
@@ -11,7 +11,7 @@ INDEX:
             Dạng Landing Page
 
 
-    II. Chia sẻ Trick HTML CSS
+    II. toiladev.com Chia sẻ Trick HTML CSS, ngoài ra sẽ nói về tin tức và softskill cho dev
         1. Up files Notes for Professional theo link lên
         2. Đối tượng: advanced
         3. Tóm tắt lại những kiến thức cần thiết rút ra đc khi đọc xong ( của cá nhân )
@@ -26,6 +26,14 @@ INDEX:
         2. Cho comment facbook vào, lên group nhờ các bạn trong nhóm còm men review :))
 
 
-    V. Individual | My life
-        *một kiểu Diary*
+    IV. Camara
 
+    V.
+
+CHART
+ALARM LOCK
+CAMARA Camara
+Envelope: iNFOR
+Light bulb  Chia sẻ Trick HTML CSS
+Individual | My life
+        *một kiểu Diary
