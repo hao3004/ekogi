@@ -15,12 +15,14 @@ let interactionPreview = setInterval(() => {
 }, 2000)
 
 
-/***********************************/
+/*********************************/
 
 
 
 
 $(window).load(function() {
     $('body').removeClass('preloading');
-    $('#preload').delay(2000).fadeOut('slow');
+    $('#preload').delay(1000).fadeOut('slow');
 });
+
+
