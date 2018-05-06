@@ -1,11 +1,17 @@
 
- @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+/*_____||__||__//\\__/| |\______________________________________________________
+_______||  ||_//  \\_\|_|/______________________________________________________
+*/
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/*______________________________________________________________________________________
+________________________________________________EKOGI MENU TOGGLE AUTOMATICALLY_________
+________________________________________________________________________________________*/
 .ekogi-menu {
   position: absolute;
   top: 20px;
@@ -103,7 +109,6 @@
   top: -1px;
 }
 
-/******************************************************************/
 body {
   overflow: hidden;
 }
@@ -176,7 +181,6 @@ path {
   transition: 0.5s 1s;
 }
 
-/********************** The following : Haodev */
 /*Change Background-color automatically */
 .ekogi-container {
   margin: 0;
@@ -200,15 +204,20 @@ path {
   100% {background-color: red;}
 }
 /*END*/
-/***********/
+/*______________________________________________________________________________________
+__________________________________________________________________EKOGI LOADING_________
+________________________________________________________________________________________*/
 
 .preloading {
     overflow: hidden;
 }
+
+
+
 .preload-container {
     width: 100%;
     height: 100%;
-    background: #ef6e7e;
+    background: #28a745;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -220,6 +229,8 @@ path {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+/* LOADING STYLE 1: dùng fontawesome có các lớp như thế này
 .preload-icon {
     font-size: 66px;
     color: #fff;
@@ -260,6 +271,65 @@ path {
   -o-animation: rotating 1.5s linear infinite;
   animation: rotating 1.5s linear infinite;
 }
+*/
+
+/*  LOADING STYLE 2:
+.circle{
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+  transform: translate(-50%,-50%);
+  width: 200px;
+  height: 200px;
+  border: 4px solid transparent;
+  border-bottom: 4px solid #36E494;
+  border-top: 4px solid #fa8072;
+  border-radius: 50%;
+  animation: animate 2s linear infinite;
+}
+
+.circle:before{
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  border: 4px solid transparent;
+  border-bottom: 4px solid #ff7f50;
+  border-top: 4px solid #2dfefa;
+  border-radius: 50%;
+  animation: animate 2.5s linear infinite;
+
+}
+.circle:after{
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  bottom: 50px;
+  right: 50px;
+  border: 4px solid transparent;
+  border-bottom: 4px solid #ffffff;
+  border-top: 4px solid #be90d4;
+  border-radius: 50%;
+  animation: animate 3s linear infinite;
+
+}
+
+@keyframes animate{
+
+  0%{
+    transform: rotate(0deg);
+
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
+*/
+
 #loader {
     bottom: 0;
     height: 175px;
@@ -348,59 +418,17 @@ path {
     background: #ff0095 none repeat scroll 0 0;
 }
 
-
-.circle{
-  position: absolute;
-  top: calc(50% - 100px);
-  left: calc(50% - 100px);
-  transform: translate(-50%,-50%);
-  width: 200px;
-  height: 200px;
-  border: 4px solid transparent;
-  border-bottom: 4px solid #36E494;
-  border-top: 4px solid #fa8072;
-  border-radius: 50%;
-  animation: animate 2s linear infinite;
+@keyframes load {
+100% {
+    opacity: 0;
+    transform: scale(1);
+}
+}
+@keyframes load {
+100% {
+    opacity: 0;
+    transform: scale(1);
+}
 }
 
-.circle:before{
-  content: '';
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  bottom: 20px;
-  right: 20px;
-  border: 4px solid transparent;
-  border-bottom: 4px solid #ff7f50;
-  border-top: 4px solid #2dfefa;
-  border-radius: 50%;
-  animation: animate 2.5s linear infinite;
-
-}
-.circle:after{
-  content: '';
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  bottom: 50px;
-  right: 50px;
-  border: 4px solid transparent;
-  border-bottom: 4px solid #ffffff;
-  border-top: 4px solid #be90d4;
-  border-radius: 50%;
-  animation: animate 3s linear infinite;
-
-}
-
-@keyframes animate{
-
-  0%{
-    transform: rotate(0deg);
-
-  }
-  100%{
-    transform: rotate(360deg);
-  }
-
-}
-
+/*End loading*/
