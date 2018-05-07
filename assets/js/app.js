@@ -36,13 +36,16 @@ let interactionPreview = setInterval(() => {
 /*______________________________________________________________________________________
 _______________________________________EKOGI SLICK SLIDER - lib-type: automatic_________
 ________________________________________________________________________________________*/
+
 $(document).ready(function(){
     $('.esogi-slider-autoplay').slick({
       slidesToShow: 5,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 1500,
-      arrows: false/*,
+      arrows: true,
+      dots: false,
+      pauseOnHover: true/*,
       responsive: [
             {
               breakpoint: 1024,
