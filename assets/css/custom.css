@@ -75,6 +75,7 @@ ________________________________________________________________________________
   line-height: 12px;
   transition: .3s;
   user-select: none;
+  cursor: pointer;
 }
 
 .ekogi-menu__title {
@@ -100,20 +101,27 @@ ________________________________________________________________________________
   transition-delay: 0.08s;
 }
 .ekogi-menu__content__list li:nth-child(1) i {
-  fill: #42A5F5;
+  color:  #24292E;
 }
 .ekogi-menu__content__list li:nth-child(2) {
   transition-delay: 0.12s;
 }
 .ekogi-menu__content__list li:nth-child(2) i {
-  fill: #66BB6A;
+  color: #078db5;
 }
 .ekogi-menu__content__list li:nth-child(3) {
   transition-delay: 0.16s;
 }
 .ekogi-menu__content__list li:nth-child(3) i {
-  fill: #FF8F00;
+  color: #DC493C;
 }
+.ekogi-menu__content__list li:nth-child(4) {
+  transition-delay: 0.20s;
+}
+.ekogi-menu__content__list li:nth-child(4) i {
+  color: #2d32c7;
+}
+
 .ekogi-menu.open .ekogi-menu__content__list li {
   transform: translateX(0);
 }
@@ -135,8 +143,8 @@ body {
   position: relative;
   display: inline-block;
   margin-top: 26%;
-  width: 67%;
-  height: 210px;
+  width: 60%;
+  height: 150px;
   background-color: #ffffff0d;
 }
 path {
@@ -158,12 +166,11 @@ path {
   transform: translateY(-50%);
 }
 .path-slider__item {
-  position: absolute;
-  left: -37px;
-  top: -37px;
+  position: block;
   cursor: pointer;
   text-decoration: none;
   outline: none;
+  width: 135px !important;
 }
 .path-slider__item:hover .item__circle, .path-slider__item:focus .item__circle {
   background-color: #19667c;
@@ -457,11 +464,6 @@ ________________________________________________________________________________
 ______________________________________________________________________05 FIELDS_________
 ________________________________________________________________________________________*/
 
-.ekogi-info {
-    top: 197px;
-    left: 128px;
-}
-
 .ekogi-menu__title {
     font-size: 18px;
     margin: 0 0 13px 0;
@@ -475,4 +477,14 @@ ________________________________________________________________________________
 }
 .ekogi-menu__content__list li:focus .ekogi-menu {
     letter-spacing: 5px;
+}
+/***************** end Sao ko đc nhỉ */
+
+/*______________________________________________________________________________________
+_______________________________________EKOGI SLICK SLIDER - lib-type: automatic_________
+________________________________________________________________________________________*/
+
+.ekogi-container .slick-list {
+    margin: 17px 0;
+    padding: 15px;
 }

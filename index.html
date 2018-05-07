@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <title>ekogi | echo knowleges ogi</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <!-- Favicon
-            <link rel="icon" href="assets/images/logo.png" type="image/x-icon">-->
+        <!-- Favicon-->
+        <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
         <!-- GG Font -->
         <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Montserrat|Roboto|Amatic+SC|Pangolin" rel="stylesheet">
         <!-- Fontawesome -->
@@ -27,9 +27,9 @@
         <!-- Add Thumbnail helper (this is optional)
             <link rel="stylesheet" type="text/css" href="assets/libs/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
             <script type="text/javascript" src="assets/libs/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>-->
-        <!-- Slick Library
-            <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick.css"/>
-            <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick-theme.css"/>-->
+        <!-- Slick Library-->
+        <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick-theme.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/custom.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/responsive.css"/>
@@ -77,7 +77,8 @@
 
         <!-- BEGIN -->
         <div class="container-fluid ekogi-container">
-            <div class="path-slider">
+            <!-- ekogi-slider, only add .autoplay and js is okay :))-->
+            <div class="path-slider esogi-slider-autoplay">
                 <a href="#chat" class="path-slider__item">
                     <div class="item__circle-translate">
                         <div class="item__circle">
@@ -102,7 +103,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#camera" class="path-slider__item">
+                <a href="#camera" class="path-slider__item ekogi-photography">
                     <div class="item__circle-translate">
                         <div class="item__circle">
                             <svg class="item__icon">
@@ -139,6 +140,7 @@
                     </div>
                 </a>
             </div>
+            <!-- end ekogi-slider-->
 
 
             <!-- isogi-menu -->
@@ -147,19 +149,19 @@
                 <div class="ekogi-menu__content">
                     <h4 class="ekogi-menu__title">Contact me</h4>
                     <ul class="ekogi-menu__content__list">
-                        <li><a href="https://github.com/hao3004" target="_blank">
-                            <i class="fab fa-github-alt"></i>
+                        <li><a href="https://github.com/hao3004" target="_blank" title="Github">
+                            <i class="fab fa-github"></i>
                             Github</a>
                         </li>
-                        <li><a href="https://www.linkedin.com/in/le-hao-503a2714b/" target="_blank">
+                        <li><a href="https://www.linkedin.com/in/le-hao-503a2714b/" target="_blank" title="Linkedin">
                             <i class="fab fa-linkedin-in"></i>
                             Linkedin</a>
                         </li>
-                        <li><a href="mailto:lehao300498@gmail.com?subject=FROM%20EKOGI" target="_blank">
+                        <li><a href="mailto:lehao300498@gmail.com?subject=FROM%20EKOGI" target="_blank" title="Email">
                             <i class="fas fa-envelope-open"></i>
                             Email</a>
                         </li>
-                        <li><a href="https://www.facebook.com/lehao.hust" target="_blank">
+                        <li><a href="https://www.facebook.com/lehao.hust" target="_blank" title="Facebook">
                             <i class="fab fa-facebook-messenger"></i>
                             Facebook</a>
                         </li>
@@ -167,14 +169,11 @@
                 </div>
             </div>
             <!-- end isogi-menu -->
-
-
         </div>
         <!-- **********************************************************************************-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-            <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script> -->
+        <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
         <script src="assets/js/app.js"></script>
     </body>
 </html>
