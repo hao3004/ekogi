@@ -7,6 +7,7 @@ _______||  ||_//  \\_\|_|/______________________________________________________
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 /*______________________________________________________________________________________
@@ -36,6 +37,9 @@ ________________________________________________________________________________
 .ekogi-menu a {
     color: #464448;
     text-decoration: none;
+    font-size: 1em;
+    letter-spacing: .5px;
+    font-weight: 600;
 }
 
 .ekogi-menu.open {
@@ -142,11 +146,13 @@ body {
 .path-slider {
   position: relative;
   display: inline-block;
-  margin-top: 30%;
   width: 60%;
   height: 150px;
   background-color: #ffffff0d;
+  margin-top: 9%;
+  border-radius: 30px;
 }
+
 path {
   stroke-width: 1px;
   stroke: none;
@@ -173,13 +179,13 @@ path {
   width: 135px !important;
 }
 .path-slider__item:hover .item__circle, .path-slider__item:focus .item__circle {
-  background-color: #19667c;
+  background-color: #ffffff26;
 }
 .item__circle {
   display: inline-block;
   width: 74px;
   height: 74px;
-  background-color: #2189a5;
+  background-color: transparent;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
   border-radius: 100%;
   transition: 1s background;
@@ -465,7 +471,7 @@ ______________________________________________________________________05 FIELDS_
 ________________________________________________________________________________________*/
 
 .ekogi-menu__title {
-    font-size: 18px;
+    font-size: .9em;
     margin: 0 0 13px 0;
     color: #1b1f2399;
 }
@@ -487,4 +493,32 @@ ________________________________________________________________________________
 .ekogi-container .slick-list {
     margin: 17px 0;
     padding: 15px;
+}
+/*______________________________________________________________________________________
+_________________________________________________________________EKOGI SITENAME_________
+________________________________________________________________________________________*/
+
+.site-name {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.ekogi-sitename {
+    font-size: 10em;
+    font-family: 'Amatic SC', cursive;
+    color: #000;
+}
+
+.site-name__dialoge {
+    position: absolute;
+    top: -15%;
+    left: 31%;
+    width: 38%;
+}
+
+.isogi-footer {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  padding: 40px;
 }

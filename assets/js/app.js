@@ -40,10 +40,10 @@ ________________________________________________________________________________
 $(document).ready(function(){
     $('.esogi-slider-autoplay').slick({
       slidesToShow: 5,
-      slidesToScroll: 1,
+      slidesToScroll: 2,
       autoplay: true,
       autoplaySpeed: 1500,
-      arrows: true,
+      arrows: false,
       dots: false,
       pauseOnHover: true/*,
       responsive: [
