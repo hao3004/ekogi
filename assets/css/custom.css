@@ -178,9 +178,7 @@ path {
   outline: none;
   width: 135px !important;
 }
-.path-slider__item:hover .item__circle, .path-slider__item:focus .item__circle {
-  background-color: #ffffff26;
-}
+
 .item__circle {
   display: inline-block;
   width: 74px;
@@ -188,7 +186,6 @@ path {
   background-color: transparent;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
   border-radius: 100%;
-  transition: 1s background;
 }
 .item__title {
   position: absolute;
@@ -203,10 +200,7 @@ path {
   pointer-events: none;
   transition: 0.5s;
 }
-.path-slider__current-item .item__circle {
-  background-color: #1d7891;
-  transition: 1s 0.5s background;
-}
+
 .path-slider__current-item .item__title {
   opacity: 1;
   pointer-events: auto;
@@ -504,13 +498,13 @@ ________________________________________________________________________________
   height: 200px;
 }
 
-.ekogi-sitename {
+#ekogi-sitename {
     font-size: 10em;
     font-family: 'Amatic SC', cursive;
     color: #000;
 }
 
-.site-name__dialoge {
+#site-name__dialoge {
     position: absolute;
     top: -15%;
     left: 31%;
@@ -521,4 +515,24 @@ ________________________________________________________________________________
   text-align: center;
   font-family: 'Indie Flower', cursive;
   padding: 30px;
+}
+
+.item__circle {
+  animation: item__circle-animation 3s infinite;
+  transform: 5s;
+  z-index: 888;
+  position: relative;
+  animation: swing 5.2s infinite;
+}
+
+@keyframes item__circle-animation {
+  0% { transform: scale(.9);}
+  25%{ transform: scale(1);}
+  50%{ transform: scale(1.1);}
+  75%{ transform: scale(1);}
+  100% { transform: scale(.9);}
+}
+
+.item__circle-translate:hover {
+  animation: tada 1s infinite;
 }

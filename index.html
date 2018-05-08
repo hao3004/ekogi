@@ -78,13 +78,13 @@
 
         <!-- BEGIN -->
         <div class="container-fluid ekogi-container">
-            <div class="site-name wow bounceInUp">
-                <h1 class="ekogi-sitename">EKOGI!</h1>
-                <img class="site-name__dialoge" src="assets/images/dialoge.png" alt="dialoge.png">
+            <div class="site-name">
+                <h1 id="ekogi-sitename" class="wow zoomIn" data-wow-delay=".8s" data-wow-duration="2s">EKOGI!</h1>
+                <img id="site-name__dialoge" class="wow fadeIn" data-wow-delay="1s" data-wow-duration="1s" src="assets/images/dialoge.png" alt="dialoge.png">
             </div>
 
             <!-- ekogi-slider, only add .autoplay and js is okay :))-->
-            <div class="path-slider esogi-slider-autoplay">
+            <div class="path-slider esogi-slider-autoplay wow fadeInDown" data-wow-delay=".8s" data-wow-duration="1s">
                 <div>
                     <a href="#chat" class="path-slider__item" target="_blank">
                         <div class="item__circle-translate">
@@ -264,11 +264,11 @@
         <!-- **********************************************************************************-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script><!--
-        <script src="assets/libs/wow.min.js"></script>
+        <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
+        <script src="assets/libs/wow/wow.min.js"></script>
         <script>
             new WOW().init();
-        </script>-->
+        </script>
         <script src="assets/js/app.js"></script>
     </body>
 </html>
