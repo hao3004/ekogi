@@ -1,22 +1,37 @@
-.ekogi-dev {
-  background-color: #28a745;
+/*****************************************************************************/
+/*                     CSS FOR INDEX.HTML                                    */
+/*                                           Echo Variabes                   */
+/*****************************************************************************/
+
+
+/******************************************** GENERAL CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    /*
+  font-family: 'Hind Vadodara', sans-serif;
+    font-family: 'Montserrat', sans-serif;*/
+    user-select:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    overflow:visible;
+    background-color: #28a745;
+    font-family: 'Indie Flower', cursive;
 }
 
-/***********************************************************/
-.nav-right ul li {
+.ekogi-dev-nav-right ul li {
   list-style-type: none;
   float: left;
 }
 
-.nav-right .dropdown-content ul li a{
-  padding: 5px 25px;
-}
-
 /********************************************* MENU SCROLL */
 
-#navbar {
+#ekogi-dev-navbar {
   background-color: #dadada00;
   position: fixed;
+  /* If delete file js: app-dev.js, menu -> fixed */
   top: 0;
   width: 100%;
   display:block;
@@ -25,7 +40,7 @@
   z-index: 1;
 }
 
-#navbar a {
+#ekogi-dev-navbar a {
   float: left;
     display: block;
     color: #000;
@@ -41,56 +56,337 @@
   padding: 30px 25px;
 }
 
-#navbar a:hover {
+#ekogi-dev-navbar a:hover {
     color: #09d594;
 }
 
-#navbar .nav-right{
+#ekogi-dev-navbar .ekogi-dev-logo a{
+  padding: 25px 40px;
+}
+
+#ekogi-dev-navbar .ekogi-dev-nav-right{
   float: right;
   padding-right: 4%;
 }
 
-li .dropdown {
+/********************************************** SCROLL-TOP BTN */
+
+#ekogi-back-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 10;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-image: url('../images/back-top.png');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  padding: 30px;
+}
+
+/**************************************************************/
+
+.ekogi-dev-sitename {
+    font-size: 3em;
+    font-family: 'Amatic SC', cursive;
+    color: #000;
+    margin: 0;
+}
+
+.ekogi-dev-sitename span {
+    font-size: 25px;
+    font-family: 'Amatic SC', cursive;
+    color: #000;
+}
+
+/*****************************************************description*/
+.container.ekogi-dev-description {
+    margin: 10% 0;
+    text-align: center;
+}
+
+/*****************************************************************UI/UX**/
+.ekogi-uiux-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    /* margin: 50px; */
+    /* float: left; */
+}
+.ekogi-uiux-wrap img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.ekogi-uiux-wrap__layout-grey{
+
+    width: 100%;
+    height: 100%;
+  background-color: rgba(0,0,0,0.60);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  transition: 0.4s;
+}
+.ekogi-uiux-wrap__gradient{
+
+    width: 100%;
+    height: 100%;
+  position: absolute;
+  background: -webkit-linear-ekogi-uiux-wrap__gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  opacity: 0;/*Opacity chá»‰ cÃ³ tÃ¡c dá»¥ng khi nháº­n cÃ¡c giÃ¡ trj tá»« o tá»›i 1, ko nháº­n % (!)*/
+  transition: 0.4s;
+}
+.ekogi-uiux-wrap__square{
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 3;
+  border: 1px solid white;
+  opacity: 0;
+  transition:0.4s;
+  transform: scale(0);
+
+}
+.ekogi-uiux-wrap__title{
+  width: 100%;
+  font-size: 53px;
+  position: absolute;
+  top: 35%;
+  z-index: 4;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition:0.4s;
+}
+.ekogi-uiux-wrap__square__excerp{
+  width: 70%;
+  font-size: 27px;
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  z-index: 5;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  transform: scale(0);
+  transition:0.4s;
+  opacity: 1;
+}
+/*
+.ekogi-uiux-wrap img{
+  width: 100%;
+    height: 100%;
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+.ekogi-uiux-wrap:hover img { transform: scale(1);;
+}
+*/
+.ekogi-uiux-wrap:hover .ekogi-uiux-wrap__title{
+  /*CÃ¡ch 1: top: 27%;
+    CÃ¡ch 2: */
+  transform: translateY(-40px);
+}
+.ekogi-uiux-wrap:hover .ekogi-uiux-wrap__square__excerp{
+  transform: scale(1);
+  top:50%;
+}
+.ekogi-uiux-wrap:hover .ekogi-uiux-wrap__square{
+  transform: scale(1);
+  opacity: 1;
+}
+.ekogi-uiux-wrap:hover .ekogi-uiux-wrap__gradient{
+  opacity: 0.35;
+}
+
+/******************************************Front-end**/
+
+
+                        .layout {
+  text-align: center;
+}
+
+.ekogi-frontend-wrap {
   position: relative;
-  display: inline-block;
+  width: 100%;
+  margin: 17px 0;
+  box-shadow: 0 3px 10px 8px rgba(0, 0, 0, 0.25);
 }
 
-.dropdown-content {
-    display: none;
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ekogi-frontend-wrap__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #262829a8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .4s ease;
+  font-size: 15px;
+}
+
+.ekogi-frontend-wrap:hover .ekogi-frontend-wrap__overlay {
+  height: 30%;
+}
+
+.ekogi-frontend-wrap__middle {
+  width: 100%;
+    transition: .5s ease;
+    opacity: 0;
     position: absolute;
-    top: 65px;
-    right: -80px;
-    z-index: 12;
-    text-align: left;
-    width: 180px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
 }
 
-#navbar .dropdown-content a {
+.ekogi-frontend-wrap:hover .ekogi-frontend-wrap__middle {
+    opacity: 1;
+}
+
+.frontend__text-middle li a{
+  white-space: nowrap;
+  color: white;
+  font-size: 17px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.frontend__text-middle {
+  font-size: 24px;
+  text-shadow: 5px 2px 15px black;
+}
+
+.ekogi-frontend-wrap li {
+    list-style-type: none;
+    padding: 8px 30px;
+    border-top: 1px solid #d2d5e4;
+    width: 50%;
     float: left;
-    display: block;
+}
+
+.ekogi-frontend-wrap li:not(:first-child) {
+  border-left: 1px solid #d2d5e4;
+}
+
+.ekogi-frontend-wrap li:not(:last-child) {
+  border-right: 1px solid #d2d5e4;
+}
+
+.ekogi-frontend-wrap a{
+    color: #fff;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+/************ Set chung cho cÃ¡c field-container*/
+.frontend-field,
+.UIUX-field {
+    box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+/*************************************************/
+
+.newest-post__category a{
+  font-size: 10px;
+  position: absolute;
+  top: 62%;
+  left: 5%;
+  z-index: 4;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 3px 7px;
+  transition: 0.5s;
+}
+.newest-post__title{
+  width: 90%;
+  font-size: 25px;
+  position: absolute;
+  top: 62%;
+  left: 5%;
+  z-index: 4;
+  text-decoration: none;
+  color: white;
+}
+
+/*******/
+.ekogi-dev-field {
+    font-family: 'Amatic SC', cursive;
+    color: #000;
+    font-size: 3em;
+    letter-spacing: 3px;
+    line-height: 75px;
+    border-bottom: 2px solid;
+    display: inline-block;
+}
+
+
+/********************/
+.frontend-field__seemore-content,
+.UIUX-field__seemore-content,
+.skills-field__seemore-content {
+  display: none;
+}
+
+.frontend-field__btn-conainer,
+.UIUX-field__btn-conainer,
+.skills-field__btn-conainer {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.frontend-field__seemore-btn,
+.UIUX-field__seemore-btn,
+.skills-field__seemore-btn {
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+  border:none;
+  padding:8px;
+  font-size:20px;
+  background:transparent;
+  color:grey;
+  box-sizing:border-box;
+  border: none;
+  font-family: 'Indie Flower', cursive;
     color: #000;
     text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: bold;
-    height: auto;
-    line-height: 30px;
-    list-style-image: none;
-    list-style-position: outside;
-    list-style-type: none;
-    padding: 0;
-    width: 200px;
-    text-align: left;
+    font-size: 19px;
+    cursor: pointer;
+    padding: 5px 10px;
 }
 
-#navbar .dropdown-content a:hover{
-    color: #09d594;
-}
-
-.dropdown-content a:first-child {
-  margin-top: 1px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+.seemore-btn:focus {
+  outline: none;
 }

@@ -14,7 +14,7 @@ $(window).load(function() {
 });
 
 /*______________________________________________________________________________________
-________________________________________________EKOGI MENU TOGGLE AUTOMATICALLY_________
+________________________________________________EKOGI MENU TOGGLE AUTOMATICALLY_bên file index.html________
 ________________________________________________________________________________________*/
 
 let ekogimenu = document.querySelector(".ekogi-menu");
@@ -23,7 +23,8 @@ let ekogibutton = document.querySelector(".ekogi-menu__button");
 toggleMenu = () => {
   ekogimenu.classList.toggle("open");
 }
-
+/* ĐOẠN NÀY LÀ NẾU CLICK VÀO (+) THÌ NÓ TOGGLE RA VÀ VÀO
+*/
 ekogibutton.addEventListener("click", function() {
   clearInterval(interactionPreview);
   toggleMenu();

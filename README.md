@@ -18,13 +18,19 @@ INDEX:
     EXTEN:
         *Sau này sẽ kèm getlink vào :))
         *Phần 1 ô cho Page facbook vào.
+            - Frontend (Theo Portfolio của isonative) DOING
+            - Backend ( chưa có gì hot :))
 
+            - Agile () sau này sẽ phát triển là Style làm việc (): Ảnh zoom
+            - Git: Git là cái này-làm slide chăng :))
 
+            - UI/UX: Kiểu square DOING
+
+        *Nút See more>> DONE
     III. Sách: ekobook
         1. Review những cuốn sách đã đọc
         => Phục vụ cho Thương hiệu cá nhân
         2. Cho comment facbook vào, lên group nhờ các bạn trong nhóm còm men review :))
-
 
     IV. Camara
 
