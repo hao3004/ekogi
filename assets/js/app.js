@@ -79,22 +79,66 @@ $(document).ready(function(){
 /*______________________________________________________________________________________
 _____________________________________________________________________CONTENT-FIELD______
 ________________________________________________________________________________________*/
-/*
-jQuery(document).ready(function($) {
+/* ĐOẠN NÀY CẦN OPTIMIZING Ở CHỖ LÀ CÙNG 1 KIỂU NHƯNG PHẢI GHI QUÁ NHIỀU DÒNG,
+  THIẾT NGHĨ NÊN DÙNG JSON, this CHẲNG HẠN, I THINK SO.*/
 
-    $('.ekogi-info', '#site-name__dialoge').on('click', function(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        document.getElementById('curent-field').innerHTML='My Info :))';
-    });
-});
-*/
 $(document).ready(function(){
-    $("#curent-field").hover(function(){
-        document.getElementById("curent-field").innerHTML = "Hi,<br/> we make it awesome";
+
+    // Display or Hide on moving the mouse to #curent-field and .site-name
+    /*
+    $("#curent-field").mouseover(function(){
+        document.getElementById("curent-field").innerHTML = "Hi,<br/> we make it awesome!";
     });
-    $(".site-name").hover(function(){
-        document.getElementById("curent-field").innerHTML = "Hi,<br/> we make it awesome";
+    $("#curent-field").mouseout(function(){
+        document.getElementById("curent-field").innerHTML = "";
     });
+    */
+    $("#site-name__dialoge").mouseover(function(){
+        document.getElementById("curent-field").innerHTML = "Hi,<br/> Make it awesome";
+    });
+    $("#site-name__dialoge").mouseout(function(){
+        document.getElementById("curent-field").innerHTML = "";
+    });
+
+    // Display or Hide on moving the mouse to .ekogi-info ( cv) 1
+    $(".ekogi-info").mouseover(function(){
+        document.getElementById("curent-field").innerHTML = "To get<br /> my personal infor. !";
+    });
+    $(".ekogi-info").mouseout(function(){
+        document.getElementById("curent-field").innerHTML = "";
+    });
+
+    // Display or Hide on moving the mouse to .ekogi-dev 2
+    $(".ekogi-dev").mouseover(function(){
+        document.getElementById("curent-field").innerHTML = "Sharing Exp. <br /> on coding!";
+    });
+    $(".ekogi-dev").mouseout(function(){
+        document.getElementById("curent-field").innerHTML = "";
+    });
+
+    // Display or Hide on moving the mouse to .ekogi-books 3
+    $(".ekogi-books").mouseover(function(){
+        document.getElementById("curent-field").innerHTML = "Read and <br />Review Together !";
+    });
+    $(".ekogi-books").mouseout(function(){
+        document.getElementById("curent-field").innerHTML = "";
+    });
+
+    // Display or Hide on moving the mouse to .ekogi-photography 4
+    $(".ekogi-photography").mouseover(function(){
+        document.getElementById("curent-field").innerHTML = "Blend <br />and Retouch!";
+    });
+    $(".ekogi-photography").mouseout(function(){
+        document.getElementById("curent-field").innerHTML = "";
+    });
+
+    // Display or Hide on moving the mouse to .ekogi-life 5
+    $(".ekogi-life").mouseover(function(){
+        document.getElementById("curent-field").innerHTML = "Tell me <br />more about you :))";
+    });
+    $(".ekogi-life").mouseout(function(){
+        document.getElementById("curent-field").innerHTML = "";
+    });
+
 });
 

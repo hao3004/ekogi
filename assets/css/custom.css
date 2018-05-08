@@ -151,7 +151,7 @@ body {
   /*
   background-color: #ffffff0d;
   */
-  margin-top: 18%;
+  margin-top: 3.5%;
   border-radius: 30px;
 }
 
@@ -188,25 +188,6 @@ path {
   background-color: transparent;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
   border-radius: 100%;
-}
-.item__title {
-  position: absolute;
-  top: 150%;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #fff;
-  font-size: 25px;
-  font-variant: small-caps;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.5s;
-}
-
-.path-slider__current-item .item__title {
-  opacity: 1;
-  pointer-events: auto;
-  transition: 0.5s 1s;
 }
 
 /*Change Background-color automatically */
@@ -488,7 +469,7 @@ ________________________________________________________________________________
 
 .ekogi-container .slick-list {
     margin: 17px 0;
-    padding: 15px;
+    padding: 20px;
 }
 /*______________________________________________________________________________________
 _________________________________________________________________EKOGI SITENAME_________
@@ -497,7 +478,7 @@ ________________________________________________________________________________
 .site-name {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 100%;
 }
 
 #ekogi-sitename {
@@ -509,9 +490,10 @@ ________________________________________________________________________________
 
 #site-name__dialoge {
     position: absolute;
-    top: 38%;
-    left: 31%;
+    top: 19%;
+    left: 32%;
     width: 38%;
+    z-index: 9999;
 }
 
 .isogi-footer {
@@ -526,7 +508,7 @@ ________________________________________________________________________________
   z-index: 888;
   position: relative;
   animation: swing 5.2s infinite;
-  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 13px 6px rgba(0, 0, 0, 0.16);
 }
 
 @keyframes item__circle-animation {
@@ -555,7 +537,7 @@ ________________________________________________________________________________
     text-align: left;
     font-weight: 600;
     position: absolute;
-    top: 40%;
-    left: 8%;
+    top: 45%;
+    left: 15%;
     transform: rotate(-10deg);
 }
