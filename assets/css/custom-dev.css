@@ -1,0 +1,96 @@
+.ekogi-dev {
+  background-color: #28a745;
+}
+
+/***********************************************************/
+.nav-right ul li {
+  list-style-type: none;
+  float: left;
+}
+
+.nav-right .dropdown-content ul li a{
+  padding: 5px 25px;
+}
+
+/********************************************* MENU SCROLL */
+
+#navbar {
+  background-color: #dadada00;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display:block;
+  height: 60px;
+  transition: top 0.3s;
+  z-index: 1;
+}
+
+#navbar a {
+  float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+  font-size: 17px;
+    font-weight: bold;
+  height: auto;
+  line-height: 30px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  padding: 30px 25px;
+}
+
+#navbar a:hover {
+    color: #09d594;
+}
+
+#navbar .nav-right{
+  float: right;
+  padding-right: 4%;
+}
+
+li .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: -80px;
+    z-index: 12;
+    text-align: left;
+    width: 180px;
+}
+
+#navbar .dropdown-content a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    height: auto;
+    line-height: 30px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    padding: 0;
+    width: 200px;
+    text-align: left;
+}
+
+#navbar .dropdown-content a:hover{
+    color: #09d594;
+}
+
+.dropdown-content a:first-child {
+  margin-top: 1px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

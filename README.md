@@ -8,7 +8,7 @@ INDEX:
     I. CV, info của mình
         1. Design logo cá nhân (png)
         2. About me
-            Dạng Landing Page
+            Dạng Landing Page. okay dùng tạm đi.
 
 
     II. toiladev.com Chia sẻ Trick HTML CSS, ngoài ra sẽ nói về tin tức và softskill cho dev
