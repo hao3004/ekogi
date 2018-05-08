@@ -148,8 +148,10 @@ body {
   display: inline-block;
   width: 60%;
   height: 150px;
+  /*
   background-color: #ffffff0d;
-  margin-top: 9%;
+  */
+  margin-top: 18%;
   border-radius: 30px;
 }
 
@@ -499,6 +501,7 @@ ________________________________________________________________________________
 }
 
 #ekogi-sitename {
+    display: inline-block;
     font-size: 10em;
     font-family: 'Amatic SC', cursive;
     color: #000;
@@ -506,7 +509,7 @@ ________________________________________________________________________________
 
 #site-name__dialoge {
     position: absolute;
-    top: -15%;
+    top: 38%;
     left: 31%;
     width: 38%;
 }
@@ -523,6 +526,7 @@ ________________________________________________________________________________
   z-index: 888;
   position: relative;
   animation: swing 5.2s infinite;
+  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.25);
 }
 
 @keyframes item__circle-animation {
@@ -535,4 +539,23 @@ ________________________________________________________________________________
 
 .item__circle-translate:hover {
   animation: tada 1s infinite;
+}
+
+/*************************************curent-field**/
+#curent-field {
+    width: 300px;
+    height: 150px;
+    font-size: 3em;
+    font-family: 'Amatic SC', cursive;
+    /* font-weight: 700; */
+    white-space: nowrap;
+    color: #464448;
+    border-radius: 50%;
+    transition: 0.2s;
+    text-align: left;
+    font-weight: 600;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    transform: rotate(-10deg);
 }

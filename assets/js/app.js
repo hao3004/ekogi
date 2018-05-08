@@ -76,3 +76,25 @@ $(document).ready(function(){
           ]*/
     });
 });
+/*______________________________________________________________________________________
+_____________________________________________________________________CONTENT-FIELD______
+________________________________________________________________________________________*/
+/*
+jQuery(document).ready(function($) {
+
+    $('.ekogi-info', '#site-name__dialoge').on('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        document.getElementById('curent-field').innerHTML='My Info :))';
+    });
+});
+*/
+$(document).ready(function(){
+    $("#curent-field").hover(function(){
+        document.getElementById("curent-field").innerHTML = "Hi,<br/> we make it awesome";
+    });
+    $(".site-name").hover(function(){
+        document.getElementById("curent-field").innerHTML = "Hi,<br/> we make it awesome";
+    });
+});
+
