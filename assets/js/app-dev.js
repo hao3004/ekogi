@@ -67,6 +67,7 @@ $(function(){
 /**********************************************************seemore**/
 
 $(document).ready(function() {
+
   $(".frontend-field__seemore-btn").click(function() {
     var elem = $(".frontend-field__seemore-btn").text();
     if (elem == "See More") {
@@ -79,6 +80,9 @@ $(document).ready(function() {
       $(".frontend-field__seemore-btn").text("See More");
       $(".frontend-field__seemore-content").slideUp();
     }
+    /* Khi click vào seemore hay see_less thì nó sẽ kéo fields đấy về top như khi dùng menu điều hướng */
+    $('html').animate({
+        scrollTop: $('.frontend-field').offset().top }, 600);
   });
 
   $(".UIUX-field__seemore-btn").click(function() {
@@ -93,6 +97,8 @@ $(document).ready(function() {
       $(".UIUX-field__seemore-btn").text("See More");
       $(".UIUX-field__seemore-content").slideUp();
     }
+    $('html').animate( {
+        scrollTop: $('.UIUX-field').offset().top },600);
   });
 
   $(".skills-field__seemore-btn").click(function() {
@@ -107,5 +113,39 @@ $(document).ready(function() {
       $(".skills-field__seemore-btn").text("See More");
       $(".skills-field__seemore-content").slideUp();
     }
+    $('html').animate( {
+        scrollTop: $('.skills-field').offset().top },600);
   });
+});
+
+/**************************** CHUYỂN ĐỘNG BODY THEO ĐIỀU HƯỚNG MENU */
+
+$(function(){
+    $('.ekogi-dev-nav-right ul li:nth-child(1) a').on('click', function(event) {
+      event.preventDefault();
+      console.log( $('.frontend-field').offset().top );
+      $('html').animate( {
+        scrollTop: $('.frontend-field').offset().top }, 700, 'easeInQuad');
+    });
+
+    $('.ekogi-dev-nav-right ul li:nth-child(2) a,.ekogi-dev-nav-right ul li:nth-child(3) a').on('click', function(event) {
+      event.preventDefault();
+      console.log( $('.UIUX-field').offset().top );
+      $('html').animate( {
+        scrollTop: $('.UIUX-field').offset().top },1000, 'easeInQuad');
+    });
+
+    $('.ekogi-dev-nav-right ul li:nth-child(4) a').on('click', function(event) {
+      event.preventDefault();
+      console.log( $('.skills-field').offset().top );
+      $('html').animate( {
+        scrollTop: $('.skills-field').offset().top },1000, 'easeInQuad');
+    });
+
+    $('.ekogi-dev-nav-right ul li:nth-child(5) a').on('click', function(event) {
+      event.preventDefault();
+      console.log( $('.other-fields').offset().top );
+      $('html').animate( {
+        scrollTop: $('.other-fields').offset().top },1500, 'easeInQuad');
+    });
 });
